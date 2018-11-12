@@ -1,25 +1,33 @@
 const path = require('path');
-const webpack = require('webpack');
 const FriendlyErrorsWebpackPlugin = require('friendly-errors-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const pkg = require('./package.json');
-const { plugins } = require('../../scripts/webpack');
-const coreWebpackConfig = require('../netlify-cms-core/webpack.config.js');
+const pkg = require(path.join(process.cwd(), 'package.json'));
 
 const isProduction = process.env.NODE_ENV === 'production';
 
 const baseConfig = {
-  ...coreWebpackConfig,
-  context: path.join(__dirname, 'src'),
-  entry: './index.js',
+  mode: isProduction ? 'production' : 'development',
+  context: path.join(__dirname, 'dist'),
+  entry: './netlify-cms.esm.js',
+  output: {
+    path: process.cwd(),
+    filename: pkg.main,
+    library: pkg.name,
+    libraryTarget: 'umd',
+    umdNamedDefine: true,
+  },
+  devtool: 'source-map',
+  target: 'web',
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        include: [/(redux-notifications|react-datetime)/],
+        use: ['to-string-loader', 'css-loader'],
+      },
+    ],
+  },
   plugins: [
-    ...Object.entries(plugins)
-      .filter(([key]) => key !== 'friendlyErrors')
-      .map(([, plugin]) => plugin()),
-    new webpack.DefinePlugin({
-      NETLIFY_CMS_VERSION: JSON.stringify(`${pkg.version}${isProduction ? '' : '-dev'}`),
-      NETLIFY_CMS_CORE_VERSION: null,
-    }),
     new FriendlyErrorsWebpackPlugin({
       compilationSuccessInfo: {
         messages: ['Netlify CMS is now running at http://localhost:8080'],
@@ -27,6 +35,32 @@ const baseConfig = {
     }),
     new CopyWebpackPlugin([{ from: '../shims/cms.css', to: 'dist/' }]),
   ],
+  /**
+   * Exclude peer dependencies from package bundles.
+   */
+  externals: (context, request, cb) => {
+    const localExternals = pkg.localExternals || [];
+    const peerDeps = Object.keys(pkg.peerDependencies || {});
+    const externals = isProduction ? peerDeps : [...localExternals, ...peerDeps];
+    const isPeerDep = dep => new RegExp(`^${dep}($|/)`).test(request);
+    return externals.some(isPeerDep) ? cb(null, request) : cb();
+  },
+  stats: isProduction
+    ? {
+        builtAt: false,
+        chunks: false,
+        colors: true,
+        entrypoints: false,
+        errorDetails: false,
+        hash: false,
+        modules: false,
+        timings: false,
+        version: false,
+        warnings: false,
+      }
+    : {
+        all: false,
+      },
   devServer: {
     contentBase: '../../dev-test',
     watchContentBase: true,

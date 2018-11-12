@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
-import store from 'Redux';
+import store from 'Redux/index';
 import { mergeConfig } from 'Actions/config';
 
 import Root from './Root'
