@@ -1,17 +1,8 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { Provider } from 'react-redux';
-import { Route } from 'react-router-dom';
-import { ConnectedRouter } from 'react-router-redux';
-import history from 'Routing/history';
-import store from 'Redux/index';
-import { getPhrases } from 'Constants/defaultPhrases';
-import { I18n } from 'react-polyglot';
-import { ErrorBoundary } from 'UI';
-import App from 'App/App';
-import 'EditorWidgets';
-import 'src/mediaLibrary';
-import 'what-input';
+import ReactModal from 'react-modal';
+
+import Root from './Root'
 
 const ROOT_ID = 'nc-root';
 
@@ -48,25 +39,12 @@ function bootstrap(opts = {}) {
     return newRoot;
   }
 
-  /**
-   * Create connected root component.
-   */
-  const Root = () => (
-    <I18n locale={'en'} messages={getPhrases()}>
-      <ErrorBoundary>
-        <Provider store={store}>
-          <ConnectedRouter history={history}>
-            <Route component={App} bootstrapConfig={config} />
-          </ConnectedRouter>
-        </Provider>
-      </ErrorBoundary>
-    </I18n>
-  );
+  ReactModal.setAppElement('#nc-root');
 
   /**
    * Render application root.
    */
-  render(<Root />, getRoot());
+  render(<Root bootstrapConfig={config} />, getRoot());
 }
 
 export default bootstrap;
