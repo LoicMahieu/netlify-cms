@@ -1,5 +1,5 @@
-import cms from 'netlify-cms-core/src';
-import image from 'netlify-cms-editor-component-image/src';
+import cms from '@igloo-be/netlify-cms-core/src';
+import image from '@igloo-be/netlify-cms-editor-component-image/src';
 
 const { registerEditorComponent } = cms;
 

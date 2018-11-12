@@ -1,9 +1,9 @@
-import cms from 'netlify-cms-core/src';
-import { GitHubBackend } from 'netlify-cms-backend-github/src';
-import { GitLabBackend } from 'netlify-cms-backend-gitlab/src';
-import { GitGatewayBackend } from 'netlify-cms-backend-git-gateway/src';
-import { BitbucketBackend } from 'netlify-cms-backend-bitbucket/src';
-import { TestBackend } from 'netlify-cms-backend-test/src';
+import cms from '@igloo-be/netlify-cms-core/src';
+import { GitHubBackend } from '@igloo-be/netlify-cms-backend-github/src';
+import { GitLabBackend } from '@igloo-be/netlify-cms-backend-gitlab/src';
+import { GitGatewayBackend } from '@igloo-be/netlify-cms-backend-git-gateway/src';
+import { BitbucketBackend } from '@igloo-be/netlify-cms-backend-bitbucket/src';
+import { TestBackend } from '@igloo-be/netlify-cms-backend-test/src';
 
 const { registerBackend } = cms;
 

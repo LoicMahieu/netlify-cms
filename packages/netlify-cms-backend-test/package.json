@@ -1,5 +1,5 @@
 {
-  "name": "netlify-cms-backend-test",
+  "name": "@igloo-be/netlify-cms-backend-test",
   "description": "Development testing backend for Netlify CMS",
   "version": "2.0.6",
   "repository": "https://github.com/netlify/netlify-cms/tree/master/packages/netlify-cms-backend-test",
@@ -29,8 +29,8 @@
     "emotion": "^9.2.6",
     "immutable": "^3.8.2",
     "lodash": "^4.17.10",
-    "netlify-cms-lib-util": "^2.0.0",
-    "netlify-cms-ui-default": "^2.0.0",
+    "@igloo-be/netlify-cms-lib-util": "^2.0.0",
+    "@igloo-be/netlify-cms-ui-default": "^2.0.0",
     "prop-types": "^15.6.2",
     "react": "^16.4.1",
     "react-emotion": "^9.2.6",

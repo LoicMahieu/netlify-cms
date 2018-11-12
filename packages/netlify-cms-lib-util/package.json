@@ -1,5 +1,5 @@
 {
-  "name": "netlify-cms-lib-util",
+  "name": "@igloo-be/netlify-cms-lib-util",
   "description": "Shared utilities for Netlify CMS.",
   "version": "2.1.0",
   "repository": "https://github.com/netlify/netlify-cms/tree/master/packages/netlify-cms-lib-util",

@@ -1,5 +1,5 @@
 {
-  "name": "netlify-cms-media-library-uploadcare",
+  "name": "@igloo-be/netlify-cms-media-library-uploadcare",
   "description": "Uploadcare integration for Netlify CMS",
   "version": "0.2.0",
   "repository": "https://github.com/netlify/netlify-cms/tree/master/packages/netlify-cms-media-library-uploadcare",
@@ -27,6 +27,6 @@
     "webpack-cli": "^3.1.0"
   },
   "peerDependencies": {
-    "netlify-cms-lib-util": "^2.0.4"
+    "@igloo-be/netlify-cms-lib-util": "^2.0.4"
   }
 }

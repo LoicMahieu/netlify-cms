@@ -1,5 +1,5 @@
 {
-  "name": "netlify-cms-widget-date",
+  "name": "@igloo-be/netlify-cms-widget-date",
   "description": "Widget for editing dates in Netlify CMS.",
   "version": "2.0.5",
   "homepage": "https://www.netlifycms.org/docs/widgets/#date",
@@ -33,7 +33,7 @@
   "peerDependencies": {
     "emotion": "^9.2.6",
     "moment": "^2.11.2",
-    "netlify-cms-ui-default": "^2.0.0",
+    "@igloo-be/netlify-cms-ui-default": "^2.0.0",
     "prop-types": "^15.5.10",
     "react": "^16.4.1",
     "react-emotion": "^9.2.6"

@@ -13,7 +13,7 @@ import {
   lengths,
   components,
   shadows,
-} from 'netlify-cms-ui-default';
+} from '@igloo-be/netlify-cms-ui-default';
 import { createNewEntry } from 'Actions/collections';
 import {
   loadUnpublishedEntries,

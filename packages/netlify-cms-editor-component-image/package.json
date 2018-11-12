@@ -1,5 +1,5 @@
 {
-  "name": "netlify-cms-editor-component-image",
+  "name": "@igloo-be/netlify-cms-editor-component-image",
   "description": "Image component for Netlify CMS editor widget",
   "version": "2.0.4",
   "repository": "https://github.com/netlify/netlify-cms/tree/master/packages/netlify-cms-editor-component-image",

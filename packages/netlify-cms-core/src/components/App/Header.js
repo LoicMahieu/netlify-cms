@@ -13,7 +13,7 @@ import {
   lengths,
   shadows,
   buttons,
-} from 'netlify-cms-ui-default';
+} from '@igloo-be/netlify-cms-ui-default';
 import SettingsDropdown from 'UI/SettingsDropdown';
 
 const styles = {

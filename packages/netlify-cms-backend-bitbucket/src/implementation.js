@@ -7,8 +7,8 @@ import {
   resolvePromiseProperties,
   then,
   unsentRequest,
-} from 'netlify-cms-lib-util';
-import { NetlifyAuthenticator } from 'netlify-cms-lib-auth';
+} from '@igloo-be/netlify-cms-lib-util';
+import { NetlifyAuthenticator } from '@igloo-be/netlify-cms-lib-auth';
 import AuthenticationPage from './AuthenticationPage';
 import API from './API';
 

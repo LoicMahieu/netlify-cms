@@ -1,5 +1,5 @@
-import { API as GithubAPI } from 'netlify-cms-backend-github';
-import { APIError } from 'netlify-cms-lib-util';
+import { API as GithubAPI } from '@igloo-be/netlify-cms-backend-github';
+import { APIError } from '@igloo-be/netlify-cms-lib-util';
 
 export default class API extends GithubAPI {
   constructor(config) {

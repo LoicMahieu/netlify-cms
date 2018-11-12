@@ -1,4 +1,4 @@
-import { loadScript } from 'netlify-cms-lib-util';
+import { loadScript } from '@igloo-be/netlify-cms-lib-util';
 import { Iterable } from 'immutable';
 
 /**

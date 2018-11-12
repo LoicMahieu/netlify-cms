@@ -1,5 +1,5 @@
 {
-  "name": "netlify-cms-backend-bitbucket",
+  "name": "@igloo-be/netlify-cms-backend-bitbucket",
   "description": "Bitbucket backend for Netlify CMS",
   "version": "2.0.7",
   "repository": "https://github.com/netlify/netlify-cms/tree/master/packages/netlify-cms-backend-bitbucket",
@@ -31,9 +31,9 @@
     "emotion": "^9.2.6",
     "immutable": "^3.7.6",
     "lodash": "^4.17.10",
-    "netlify-cms-lib-auth": "^2.0.4",
-    "netlify-cms-lib-util": "^2.1.0",
-    "netlify-cms-ui-default": "^2.0.6",
+    "@igloo-be/netlify-cms-lib-auth": "^2.0.4",
+    "@igloo-be/netlify-cms-lib-util": "^2.1.0",
+    "@igloo-be/netlify-cms-ui-default": "^2.0.6",
     "prop-types": "^15.6.2",
     "react": "^16.4.1",
     "react-emotion": "^9.2.6"
