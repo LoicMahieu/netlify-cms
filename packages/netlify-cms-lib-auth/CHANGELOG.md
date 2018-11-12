@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 2.0.5 (2018-11-12)
+
+
+### Bug Fixes
+
+* **auth:** scrollbars not appearing in auth window ([#1766](https://github.com/netlify/netlify-cms/tree/master/packages/netlify-cms-lib-auth/issues/1766)) ([8176243](https://github.com/netlify/netlify-cms/tree/master/packages/netlify-cms-lib-auth/commit/8176243))
+* **bitbucket:** fix rebasing mistakes in bitbucket backend and deps ([#1522](https://github.com/netlify/netlify-cms/tree/master/packages/netlify-cms-lib-auth/issues/1522)) ([bdfd944](https://github.com/netlify/netlify-cms/tree/master/packages/netlify-cms-lib-auth/commit/bdfd944))
+
+
+
+
+
 <a name="2.0.4"></a>
 ## [2.0.4](https://github.com/netlify/netlify-cms/tree/master/packages/netlify-cms-lib-auth/compare/netlify-cms-lib-auth@2.0.3...netlify-cms-lib-auth@2.0.4) (2018-08-24)
 

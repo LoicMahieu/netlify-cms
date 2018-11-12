@@ -1,7 +1,7 @@
 {
   "name": "@igloo-be/netlify-cms-widget-relation",
   "description": "Widget for linking related entries in Netlify CMS.",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "homepage": "https://www.netlifycms.org/docs/widgets/#relation",
   "repository": "https://github.com/netlify/netlify-cms/tree/master/packages/netlify-cms-widget-relation",
   "bugs": "https://github.com/netlify/netlify-cms/issues",
@@ -28,10 +28,10 @@
     "rollup": "^0.66.6"
   },
   "peerDependencies": {
+    "@igloo-be/netlify-cms-ui-default": "^2.0.0",
     "emotion": "^9.2.6",
     "immutable": "^3.7.6",
     "lodash": "^4.17.10",
-    "@igloo-be/netlify-cms-ui-default": "^2.0.0",
     "prop-types": "^15.5.10",
     "react": "^16.4.1",
     "react-emotion": "^9.2.5",

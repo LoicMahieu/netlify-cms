@@ -1,7 +1,7 @@
 {
   "name": "@igloo-be/netlify-cms-widget-datetime",
   "description": "Widget for editing dates and times in Netlify CMS.",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "homepage": "https://www.netlifycms.org/docs/widgets/#datetime",
   "repository": "https://github.com/netlify/netlify-cms/tree/master/packages/netlify-cms-widget-datetime",
   "bugs": "https://github.com/netlify/netlify-cms/issues",
@@ -22,7 +22,7 @@
     "build": "rollup -c"
   },
   "dependencies": {
-    "@igloo-be/netlify-cms-widget-date": "^2.0.5"
+    "@igloo-be/netlify-cms-widget-date": "^2.0.6"
   },
   "devDependencies": {
     "cross-env": "^5.2.0",

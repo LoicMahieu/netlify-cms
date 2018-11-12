@@ -1,7 +1,7 @@
 {
   "name": "@igloo-be/netlify-cms-widget-file",
   "description": "Widget for uploading files in Netlify CMS.",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "homepage": "https://www.netlifycms.org/docs/widgets/#file",
   "repository": "https://github.com/netlify/netlify-cms/tree/master/packages/netlify-cms-widget-file",
   "bugs": "https://github.com/netlify/netlify-cms/issues",
@@ -29,9 +29,9 @@
     "rollup": "^0.66.6"
   },
   "peerDependencies": {
+    "@igloo-be/netlify-cms-ui-default": "^2.0.0",
     "emotion": "^9.2.6",
     "immutable": "^3.7.6",
-    "@igloo-be/netlify-cms-ui-default": "^2.0.0",
     "prop-types": "^15.5.10",
     "react": "^16.4.1",
     "react-emotion": "^9.2.6",
