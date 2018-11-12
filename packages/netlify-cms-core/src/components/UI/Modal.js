@@ -56,10 +56,6 @@ export class Modal extends React.Component {
     onClose: PropTypes.func.isRequired,
   };
 
-  componentDidMount() {
-    ReactModal.setAppElement('#nc-root');
-  }
-
   render() {
     const { isOpen, children, className, onClose } = this.props;
     return (

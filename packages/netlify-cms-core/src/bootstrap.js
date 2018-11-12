@@ -1,5 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
+import ReactModal from 'react-modal';
 
 import Root from './Root'
 
@@ -37,6 +38,8 @@ function bootstrap(opts = {}) {
     document.body.appendChild(newRoot);
     return newRoot;
   }
+
+  ReactModal.setAppElement('#nc-root');
 
   /**
    * Render application root.
