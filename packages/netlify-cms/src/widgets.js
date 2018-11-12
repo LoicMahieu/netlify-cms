@@ -1,17 +1,17 @@
-import cms from '@igloo-be/netlify-cms-core/src';
-import { StringControl, StringPreview } from '@igloo-be/netlify-cms-widget-string/src';
-import { NumberControl, NumberPreview } from '@igloo-be/netlify-cms-widget-number/src';
-import { TextControl, TextPreview } from '@igloo-be/netlify-cms-widget-text/src';
-import { ImageControl, ImagePreview } from '@igloo-be/netlify-cms-widget-image/src';
-import { FileControl, FilePreview } from '@igloo-be/netlify-cms-widget-file/src';
-import { DateControl, DatePreview } from '@igloo-be/netlify-cms-widget-date/src';
-import { DateTimeControl, DateTimePreview } from '@igloo-be/netlify-cms-widget-datetime/src';
-import { SelectControl, SelectPreview } from '@igloo-be/netlify-cms-widget-select/src';
-import { MarkdownControl, MarkdownPreview } from '@igloo-be/netlify-cms-widget-markdown/src';
-import { ListControl, ListPreview } from '@igloo-be/netlify-cms-widget-list/src';
-import { ObjectControl, ObjectPreview } from '@igloo-be/netlify-cms-widget-object/src';
-import { RelationControl, RelationPreview } from '@igloo-be/netlify-cms-widget-relation/src';
-import { BooleanControl } from '@igloo-be/netlify-cms-widget-boolean/src';
+import cms from '@igloo-be/netlify-cms-core';
+import { StringControl, StringPreview } from '@igloo-be/netlify-cms-widget-string';
+import { NumberControl, NumberPreview } from '@igloo-be/netlify-cms-widget-number';
+import { TextControl, TextPreview } from '@igloo-be/netlify-cms-widget-text';
+import { ImageControl, ImagePreview } from '@igloo-be/netlify-cms-widget-image';
+import { FileControl, FilePreview } from '@igloo-be/netlify-cms-widget-file';
+import { DateControl, DatePreview } from '@igloo-be/netlify-cms-widget-date';
+import { DateTimeControl, DateTimePreview } from '@igloo-be/netlify-cms-widget-datetime';
+import { SelectControl, SelectPreview } from '@igloo-be/netlify-cms-widget-select';
+import { MarkdownControl, MarkdownPreview } from '@igloo-be/netlify-cms-widget-markdown';
+import { ListControl, ListPreview } from '@igloo-be/netlify-cms-widget-list';
+import { ObjectControl, ObjectPreview } from '@igloo-be/netlify-cms-widget-object';
+import { RelationControl, RelationPreview } from '@igloo-be/netlify-cms-widget-relation';
+import { BooleanControl } from '@igloo-be/netlify-cms-widget-boolean';
 
 const { registerWidget } = cms;
 
