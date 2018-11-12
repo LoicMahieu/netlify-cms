@@ -1,18 +1,9 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { Provider } from 'react-redux';
-import { Route } from 'react-router-dom';
-import { ConnectedRouter } from 'react-router-redux';
-import history from 'Routing/history';
 import store from 'Redux';
 import { mergeConfig } from 'Actions/config';
-import { getPhrases } from 'Constants/defaultPhrases';
-import { I18n } from 'react-polyglot';
-import { ErrorBoundary } from 'UI';
-import App from 'App/App';
-import 'EditorWidgets';
-import 'src/mediaLibrary';
-import 'what-input';
+
+import Root from './Root'
 
 const ROOT_ID = 'nc-root';
 
@@ -57,21 +48,6 @@ function bootstrap(opts = {}) {
   if (config) {
     store.dispatch(mergeConfig(config));
   }
-
-  /**
-   * Create connected root component.
-   */
-  const Root = () => (
-    <I18n locale={'en'} messages={getPhrases()}>
-      <ErrorBoundary>
-        <Provider store={store}>
-          <ConnectedRouter history={history}>
-            <Route component={App} />
-          </ConnectedRouter>
-        </Provider>
-      </ErrorBoundary>
-    </I18n>
-  );
 
   /**
    * Render application root.
