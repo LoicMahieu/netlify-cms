@@ -1,7 +1,5 @@
 import React from 'react';
 import { render } from 'react-dom';
-import store from 'Redux/index';
-import { mergeConfig } from 'Actions/config';
 
 import Root from './Root'
 
@@ -41,18 +39,9 @@ function bootstrap(opts = {}) {
   }
 
   /**
-   * Dispatch config to store if received. This config will be merged into
-   * config.yml if it exists, and any portion that produces a conflict will be
-   * overwritten.
-   */
-  if (config) {
-    store.dispatch(mergeConfig(config));
-  }
-
-  /**
    * Render application root.
    */
-  render(<Root />, getRoot());
+  render(<Root bootstrapConfig={config} />, getRoot());
 }
 
 export default bootstrap;
